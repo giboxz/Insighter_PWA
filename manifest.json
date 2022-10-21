@@ -42,7 +42,7 @@
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/256.png",
         "sizes": "256x256",
         "type": "image/png",
-        "purpose":"any maskable"
+        "purpose":"any "
       },
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/512.png",
