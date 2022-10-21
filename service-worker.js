@@ -8,59 +8,45 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
 
-        './index.html',
-        './charts.html',
+        './cadastro_maquinas.html',
+        './editar_maquinas.html',
+        './home.html',
+        './lista_de_maquinas.html',
         './login.html',
-        './css/sb-admin-2.min.css',
-        './css/sb-admin-2.css',
-        './vendor/fontawesome-free/less/_variables.less',
-        './vendor/fontawesome-free/css/v4-shims.min.css',
-        './vendor/fontawesome-free/css/v4-shims.css',
-        './vendor/fontawesome-free/css/fontawesome.min.css',
-        './vendor/fontawesome-free/css/fontawesome.css',
-        './vendor/fontawesome-free/css/all.min.css',
-        './vendor/fontawesome-free/css/all.css',
+        './maquina_dash.html',
+        './notificacoes.html',
+        './perfil.html',
+        './recuperar_senha.html',
+        './seguranca.html',
+        './termosde_uso.html',
+
         //pasta JS
-        './js/demo/chart-area-demo.js',
-        './js/demo/chart-bar-demo.js',
-        './js/demo/chart-pie-demo.js',
-        './js/demo/datatables-demo.js',
-        './js/sb-admin-2.js',
-        './js/sb-admin-2.min.js',
+        './js/api_call.js',
+        './js/chart_script.js',
+        './js/home.js',
+        './js/script.js',
 
-        //pasta vendor/bootstrap
-        './vendor/bootstrap/js/bootstrap.bundle.js',
-        './vendor/bootstrap/js/bootstrap.bundle.js.map',
-        './vendor/bootstrap/js/bootstrap.bundle.min.js',
-        './vendor/bootstrap/js/bootstrap.bundle.min.js.map',
-        './vendor/bootstrap/js/bootstrap.js',
-        './vendor/bootstrap/js/bootstrap.js.map',
-        './vendor/bootstrap/js/bootstrap.min.js',
-        './vendor/bootstrap/js/bootstrap.min.js.map',
-
-        //pasta vendor/chart
-        '/vendor/chart.js/Chart.bundle.js',
-        '/vendor/chart.js/Chart.bundle.min.js',
-        '/vendor/chart.js/Chart.js',
-        '/vendor/chart.js/Chart.min.js',
-        
-
-        //pasta vendor/fontawesome
-
-
-        //pasta
-
-        './img/logo-white.svg',
-        './img/undraw_profile.svg'
-        // './icon/source/Assets.xcassets/AppIcon.appset/64.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/128.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/144.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/152.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/167.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/180.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/196.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/512.png',
-        // './icon/source/Assets.xcassets/AppIcon.appset/1024.png'
+        //Imagens
+        './assets/images/add_button.svg',
+        './assets/images/Bell.svg',
+        './assets/images/delete_button.svg',
+        './assets/images/edit_button.svg',
+        './assets/images/Emergency Exit.svg',
+        './assets/images/Info.svg',
+        './assets/images/Lock.svg',
+        './assets/images/logo_insighter.svg',
+        './assets/images/logo-login.png',
+        './assets/images/profile_pic.png',
+       
+        './icon/source/Assets.xcassets/AppIcon.appset/64.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/128.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/144.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/152.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/167.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/180.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/196.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/512.png',
+        './icon/source/Assets.xcassets/AppIcon.appset/1024.png'
       ]))
   );
 });
