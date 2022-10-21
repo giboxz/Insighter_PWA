@@ -7,8 +7,7 @@
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/128.png",
         "sizes": "128x128",
-        "type": "image/png",
-        "purpose":"any maskable"
+        "type": "image/png"
       },
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/144.png",
