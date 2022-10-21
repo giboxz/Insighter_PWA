@@ -1,51 +1,93 @@
 {
-  "name": "Insighter",
-  "short_name": "Insighter",
-  "description": "Github copy",
-  "dir": "auto",
-  "lang": "pt-BR",
-  "icons":
-          [{
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/1024.png",
-            "sizes": "1024x1024",
-            "type": "image/png"
-           },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose" : "maskable"
-          },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-          },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/216.png",
-            "sizes": "216x216",
-            "type": "image/png"
-          },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/196.png",
-            "sizes": "196x196",
-            "type": "image/png"
-          },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/180.png",
-            "sizes": "180x180",
-            "type": "image/png"
-          },
-          {
-            "src":"/assets/Icon/Assets.xcassets/AppIcon.appiconset/172.png",
-            "sizes": "172x172",
-            "type": "image/png"
-          }],
-   "display": "standalone",
-   "scope": "./",
-   "orientation": "natural",
-   "background_color": "#FFFFFF",
-   "theme_color": "white",
-   "start_url": "index.html",
-   "categories": ["productivity", "social","education"]
-}
+    "name": "Insighter",
+    "short_name": "Insighter",
+    "lang": "pt-br",
+    "description": "O Melhor App!",
+    "icons": [
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/167.png",
+        "sizes": "167x167",
+        "type": "image/png",
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/180.png",
+        "sizes": "180x180",
+        "type": "image/png",
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/196.png",
+        "sizes": "192x192",
+        "type": "image/png",
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose":"any maskable"
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "purpose":"any maskable"
+      }
+    ],
+    "start_url": "https://insighter-pwa.netlify.app/home.html",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4D5360",
+    "dir": "ltr",
+    "orientation": "any",
+    "scope": "/" ,
+    "categories": ["industry","education"],
+   
+    "shortcuts": [
+      {
+        "name": "Insighter",
+        "short_name": "Insighter",
+        "description": "View the list of your machines",
+        "url": "https://insighter-pwa.netlify.app/home.html",
+        "icons": [{ "src": "/Icon/Assets.xcassets/AppIcon.appiconset/196.png",
+         "sizes": "196x196" }
+        ]
+      }
+    ],
+    
+    "screenshots" : [
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "platform": "wide",
+        "label": "Homescreen of Awesome App"
+      },
+      {
+        "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png",
+        "platform": "wide",
+        "label": "List of Awesome Resources available in Awesome App"
+      }
+    ],
+    "prefer_related_applications": true,
+    "related_applications": [{
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"
+    }]
+  }
