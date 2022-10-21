@@ -50,15 +50,6 @@ self.addEventListener('install', event => {
       ]))
   );
 });
-self.addEventListener('install', function(event) {
-  // Perform install steps
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
 
 self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
