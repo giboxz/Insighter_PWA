@@ -1,6 +1,8 @@
 {
     "name": "Insighter",
     "short_name": "Insighter",
+    "lang": "pt-br",
+    "description": "O Melhor App!",
     "icons": [
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/128.png",
@@ -93,5 +95,10 @@
         "platform": "wide",
         "label": "List of Awesome Resources available in Awesome App"
       }
-    ]
+    ],
+
+    "related_applications": [{
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+    }]
   }
