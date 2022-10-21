@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Zen Maru Gothic;
+    font-weight: 700 !important;
+}
+
+body .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    /* background-color: rgb(225, 216, 216); */
+    margin: 0 auto;
+    width: 350px;
+}
+
+body .content .insighter-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+body .content .insighter-logo img{
+    width: 300px;
+}
+
+body .content .content-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body .content .content-header h1{
+    width: 300px;
+    font-size: 24px;
+    font-weight: 700;
+    color:#3540E6;
+    margin: 10px 0 10px 0;
+}
+
+body .content .content-header p{
+    width: 250px;
+    font-size: 15.5px;
+    font-weight: 700;
+    color:#3540E6;
+    margin: -7px 0 10px 0;
+}
+body .content .input-recuperar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+body .content .input-recuperar input{
+    background: rgba(53, 64, 230, 0.09);
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+    height: 45px;
+    border: none;
+    width: 270px;
+    color: #3540E6;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .content .input-recuperar input::placeholder{
+    color: #3541e662;
+}
+
+
+
+body .content .button-senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+body .content .button-senha button{
+    width: 300px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #3540E6;
+    font-size: 20px;
+    font-weight: 700;
+    height: 45px;
+}
+/* 
+body .content .button-senha{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+body .content .button-senha button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    background: #3540E6;
+    color: #fff;
+    
+    border-radius: 3em;
+    border: none;
+}  */

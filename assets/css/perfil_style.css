@@ -31,6 +31,7 @@ button {
   background: #fff;
   font-family: "Poppins";
   box-sizing: border-box;
+  border-bottom: 2px solid rgba(53, 64, 230, 0.16);
 }
 
 @media only screen and (min-width: 600px) {
@@ -131,124 +132,89 @@ body.open .navbar-menu {
   color: inherit;
 }
 
-.home-content{
+.conteudo {
   display: flex;
-  flex-direction: column;
-  
-}
-.welcome-home{
-  margin: auto;
-}
-
-
-/* codigo gilvan */
-.home_mensagem {
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 40px;
-  color: #344EE2;
-  margin: 0px 2% 0px 2%;
-  margin-top: 70px;
-}
-
-.home_mensagem h1{
-  margin: 0;
-}
-
-.home_corpo {
-  display: flex;
+  min-height: 99vh;
+  min-width: 100%;
   flex-direction: column;
 }
 
-.home_alerta {
-  padding-top: 10%;
-  margin: 0px 2% 0px 2%;
-}
-
-.home_alerta div {
+.barra_navegacao {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.titulo_pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
+  margin-top: 4em;
+  border-bottom: 2px solid rgba(53, 64, 230, 0.16);
 }
 
-.home_corpo a{
-  text-decoration: none;
-}
-
-a .home_alerta p {
+.titulo_pagina h1 {
   font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 114.3%;
-  color: #1E1E1E;
-  padding-left: 3%;
-  text-decoration: none;
+  line-height: 20px;
+  color: #3540E6;
+  margin-bottom: 5%;
 }
 
-.home_alerta_conteudo{
+.titulo_pagina svg {
+  padding-top: 5%;
+}
+
+.item {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 2px solid rgba(53, 64, 230, 0.16);
+}
+
+.item h3 {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #344EE2;
+  padding-left: 10%;
+}
+
+.item_sair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 2px solid rgba(53, 64, 230, 0.16);
+}
+
+.item_sair h3 {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #EC2F2F;
+  margin-left: 10%;
+}
+
+.mid {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
-.home_alerta .home_alerta_conteudo svg{
-  height: 70px;
-  padding-right: 5px;
-}
-
-/* codigo charts */
-.wrapper-content .wrapper h1{
-  color: #3540E6;
-  padding-left: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  #wrapper-content{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #wrapper{
-    width: 33%;
-  }
-  .wrapper{
-    max-width: 100% !important;
-  }
-  .home_alerta{
-    padding-top: 2.2%;
-    margin: 0px 2% 0px 2%;
-  }
-  .home_alerta div{
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .home_alerta .home_alerta_conteudo svg{
-    height: 160px;
-    padding-right: 5px;
-  }
-  a .home_alerta p {
-    font-size: 50px;
-  }
-  .home_mensagem{
-    padding-left: 10px;
-  }
-  .home_mensagem h1{
-    font-size: 64px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  
-}
-
-.navbar{
-    border-bottom: 2px solid rgba(53, 64, 230, 0.16);
+a {
+  text-decoration: none;
 }

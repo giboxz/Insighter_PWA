@@ -1,0 +1,159 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Zen Maru Gothic;
+    font-weight: 700 !important;
+}
+
+body .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(225, 216, 216); */
+    margin: 0 auto;
+    width: 350px;
+}
+
+/* body .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    width: 400px;
+}  */
+
+body .content .header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+body .content .header-content .insighter-logo img{
+    width: 300px;
+}
+
+body .content .labels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto 20px auto;
+    width: 300px;
+    height: 100px;
+}
+
+body .content .labels > form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+body .content .labels > form .input-usuario{
+    margin-bottom: 10px;
+    background: rgba(53, 64, 230, 0.09);
+    border-radius: 30px;
+    height: 45px;
+    padding: 0 15px 0 15px;
+    border: none;
+}
+
+body .content .labels > form .input-senha{
+    background: rgba(53, 64, 230, 0.09);
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+    height: 45px;
+    border: none;
+}
+
+body .content .labels > form .input-usuario, body .content .labels > form .input-senha{
+    color: #3540E6;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body .content .labels > form .input-usuario::placeholder, body .content .labels > form .input-senha::placeholder{
+    color: #3541e662;
+    font-size: 13px;
+}
+
+body .content .labels .labels-esqueci{
+    text-decoration: none;
+}
+
+body .content .labels .labels-esqueci > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    margin-top: 3.5px;
+    margin-left: 15.5px;
+    font-size: 12px;
+    color: #3540E6;
+    opacity: 57%;
+    margin-bottom: 15px;
+}
+
+
+body .content .buttons .buttons_entrar > a button, body .content .buttons .buttons_cadastre-se > a button{
+    width: 300px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body .content .buttons .buttons_entrar > a button{
+    background-color: #3540E6;
+}
+
+body .content .buttons .buttons_cadastre-se > a button{
+    background-color: #25E6B1;
+}
+
+body .content .buttons .buttons_ou{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
+    
+}
+
+body .content .buttons .buttons_ou p{
+    position: relative;
+    color: #3540E6;
+    font-size: 10px;
+}
+
+body .content .buttons .buttons_ou p::after{
+    position: absolute;
+    bottom: 6px;
+    content: ""; 
+    left: 40px;
+    width: 100px;
+    height: 2px;
+    background-color: #EDEEFD;
+    border-radius: 24px;
+}
+
+body .content .buttons .buttons_ou p::before{
+    position: absolute;
+    bottom: 6px;
+    content: "";
+    right: 40px;
+    width: 100px;
+    height: 2px;
+    background-color: #EDEEFD;
+    border-radius: 24px;
+}
+
+/* @media screen and (max-width: 600px) {
+    body .content{
+        
+    }
+  } */

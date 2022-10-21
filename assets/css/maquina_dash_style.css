@@ -31,6 +31,7 @@ button {
   background: #fff;
   font-family: "Poppins";
   box-sizing: border-box;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 600px) {
@@ -131,124 +132,67 @@ body.open .navbar-menu {
   color: inherit;
 }
 
-.home-content{
+
+.maquinas_conteudo {
+  margin-top: 64px;
   display: flex;
-  flex-direction: column;
   
-}
-.welcome-home{
-  margin: auto;
-}
-
-
-/* codigo gilvan */
-.home_mensagem {
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 40px;
-  color: #344EE2;
-  margin: 0px 2% 0px 2%;
-  margin-top: 70px;
-}
-
-.home_mensagem h1{
-  margin: 0;
-}
-
-.home_corpo {
-  display: flex;
   flex-direction: column;
 }
 
-.home_alerta {
-  padding-top: 10%;
-  margin: 0px 2% 0px 2%;
+h1 {
+  font-family: "Zen Maru Gothic";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 44px;
+  padding-left: 5%;
+
+  color: #344ee2;
 }
 
-.home_alerta div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.maquinas_topo {
   padding-top: 5%;
   padding-bottom: 5%;
-  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
-}
-
-.home_corpo a{
-  text-decoration: none;
-}
-
-a .home_alerta p {
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 114.3%;
-  color: #1E1E1E;
-  padding-left: 3%;
-  text-decoration: none;
-}
-
-.home_alerta_conteudo{
+  border-bottom: 2px solid #d9d9d9;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
-.home_alerta .home_alerta_conteudo svg{
-  height: 70px;
-  padding-right: 5px;
+.maquinas_corpo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
 }
 
-/* codigo charts */
-.wrapper-content .wrapper h1{
-  color: #3540E6;
-  padding-left: 15px;
+.maquinas_navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  border-top: 2px solid #d9d9d9;
 }
 
-@media screen and (min-width: 768px) {
-  #wrapper-content{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #wrapper{
-    width: 33%;
-  }
-  .wrapper{
-    max-width: 100% !important;
-  }
-  .home_alerta{
-    padding-top: 2.2%;
-    margin: 0px 2% 0px 2%;
-  }
-  .home_alerta div{
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .home_alerta .home_alerta_conteudo svg{
-    height: 160px;
-    padding-right: 5px;
-  }
-  a .home_alerta p {
-    font-size: 50px;
-  }
-  .home_mensagem{
-    padding-left: 10px;
-  }
-  .home_mensagem h1{
-    font-size: 64px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  
+.maquinas_rodape {
+  padding-left: 77%;
+  padding-bottom: 4%;
 }
 
-.navbar{
-    border-bottom: 2px solid rgba(53, 64, 230, 0.16);
+.machine-title {
+  width: 100%;
 }
+
+.btn-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3%;
+}
+
+.btn-list a {
+  margin: 0.5rem;
+}
+
+
