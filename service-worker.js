@@ -19,6 +19,7 @@ self.addEventListener('install', event => {
         './recuperar_senha.html',
         './seguranca.html',
         './termosde_uso.html',
+        
 
         //pasta JS
         './js/api_call.js',
@@ -38,15 +39,15 @@ self.addEventListener('install', event => {
         './assets/images/logo-login.png',
         './assets/images/profile_pic.png',
        
-        './icon/source/Assets.xcassets/AppIcon.appset/64.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/128.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/144.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/152.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/167.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/180.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/196.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/512.png',
-        './icon/source/Assets.xcassets/AppIcon.appset/1024.png'
+        './assets/Icon/64.png',
+        './assets/Icon/128.png',
+        './assets/Icon/144.png',
+        './assets/Icon/152.png',
+        './assets/Icon/167.png',
+        './assets/Icon/180.png',
+        './assets/Icon/196.png',
+        './assets/Icon/512.png',
+        './assets/Icon/1024.png'
       ]))
   );
 });
