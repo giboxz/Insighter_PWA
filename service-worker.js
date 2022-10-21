@@ -20,6 +20,20 @@ self.addEventListener('install', event => {
         './seguranca.html',
         './termosde_uso.html',
         
+        '/assets/css/cadastro_maquinas_style.css',
+        '/assets/css/editar_maquinas_style.css',
+        '/assets/css/home_style.css',
+        '/assets/css/login_style.css',
+        '/assets/css/maquina_dash_style.css',
+        '/assets/css/maquinas_style.css',
+        '/assets/css/menu_style.css',
+        '/assets/css/notificacoes_style.css',
+        '/assets/css/perfil_style.css',
+        '/assets/css/recuperar_senha.css',
+        '/assets/css/seguranca_style.css',
+        '/assets/css/select_maquinas.css',
+        '/assets/css/style.css',
+        '/assets/css/termos_style.css',
 
         //pasta JS
         './js/api_call.js',

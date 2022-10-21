@@ -247,6 +247,16 @@ const toggleMenuOpen = () => {
   document.body.classList.toggle("open");
 }
 
+      var data_temp = generateDayWiseTimeSeries(new Date("21 oct 2022").getTime(), 20, {
+        min: 30,
+        max: 90
+      });
+      updateChart(options1, data_temp);
+
+var chart4 = new ApexCharts(document.querySelector("#chart-area-temp-home"), options1);
+
+chart4.render();
+
 function getSingleData(id) {
   fetch(`https://retoolapi.dev/2PlLEF/data/${id}`)
   .then(response => {
