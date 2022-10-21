@@ -8,7 +8,6 @@
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/128.png",
         "sizes": "128x128",
         "type": "image/png",
-        "purpose":"any maskable"
       },
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/144.png",
@@ -44,7 +43,6 @@
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/256.png",
         "sizes": "256x256",
         "type": "image/png",
-        "purpose":"any "
       },
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/512.png",
@@ -97,7 +95,7 @@
         "label": "List of Awesome Resources available in Awesome App"
       }
     ],
-
+    "prefer_related_applications": true,
     "related_applications": [{
       "platform": "play",
       "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"
