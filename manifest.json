@@ -38,13 +38,13 @@
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/512.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose":"any maskable"
+        "purpose":"any"
       },
       {
         "src": "/assets/Icon/Assets.xcassets/AppIcon.appiconset/1024.png",
         "sizes": "1024x1024",
         "type": "image/png",
-        "purpose":"any maskable"
+        "purpose":"maskable"
       }
     ],
     "start_url": "https://insighter-pwa.netlify.app/home.html",
