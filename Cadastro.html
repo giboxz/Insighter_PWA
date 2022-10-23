@@ -8,48 +8,38 @@
     <meta name="theme-color" content="#fff" />
     <link rel="apple-touch-icon" href="/assets/Icon/180.png">
     <link rel="manifest" href="manifest.json" />
-    <title>Insighter - Login</title>
-    <link rel="stylesheet" href="assets/css/login_style.css">
+    <title>Insighter - Recuperar Senha</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
     <link href='https://fonts.googleapis.com/css?family=Zen Maru Gothic' rel='stylesheet'>
     <link rel="shortcut icon" href="/assets/Icon/180.png" type="image/x-icon" />
 </head>
 
 <body>
     <div class="content">
-        <div class="header-content">
+        <div class="insighter-logo">
             <a href="login.html">
-                <div class="insighter-logo">
-                    <img src="assets/images/logo-login.png" alt="insighter-logo">
-                </div>
+                <img src="assets/images/logo-login.png" alt="insighter-logo">
             </a>
         </div>
 
-        <div class="labels">
-            <form>
-                <input class="input-usuario" type="text" id="fname" name="fname" placeholder="Usuário">
-                <input class="input-senha" type="password" id="lname" name="lname" placeholder="Senha">
-            </form>
-            <div class="labels-esqueci">
-                <a href="recuperar_senha.html">Esqueci minha senha</a>
-            </div>
+        <div class="content-header">
+            <h1>Informe seus dados</h1>
+            <p>Entraremos em contato para mais detalhes sobre os serviços</p>
+        </div>
+        <div class="input-recuperar">
+            <input type="text" placeholder="Nome Completo">
+        </div>
+        <div class="input-recuperar">
+            <input type="text" placeholder="Nome da Compania">
+        </div>
+        <div class="input-recuperar">
+            <input type="text" placeholder="E-mail para contato">
+        </div>
+        <div class="button-senha">
+            <a href="login.html">Enviar</a>
         </div>
 
-        <div class="buttons">
-            <div class="buttons_entrar">
-                <a href="home.html"><button type="submit">Entrar</button></a>
-            </div>
-
-            <span class="buttons_ou">
-                <p>OU</p>
-            </span>
-
-            <div class="buttons_cadastre-se">
-                <a href="Cadastro.html"><button type="submit">Cadastre-se</button></a>
-            </div>
-        </div>
     </div>
-
-
 
     <script typr="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
@@ -80,6 +70,7 @@
             });
         }
     </script>
+
 </body>
 
 </html>
