@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="/assets/Icon/180.png">
   <link rel="manifest" href="manifest.json" />
   <title>Insighter - Edição de Máquinas</title>
+  
   <link rel="stylesheet" href="assets/css/editar_maquinas_style.css">
   <link href='https://fonts.googleapis.com/css?family=Zen Maru Gothic' rel='stylesheet'>
   <link rel="shortcut icon" href="/assets/Icon/180.png" type="image/x-icon" />
@@ -78,6 +79,7 @@
        </svg>
     </a>
     <nav class="navbar-menu">
+       <a href="home.html">Home</a>
        <a href="lista_de_maquinas.html">Máquinas</a >
        <a href="perfil.html">Perfil</a>
        <a href="login.html">Sair</a>
@@ -163,7 +165,7 @@
             </div>
           </div>
           <div class="botoes">
-            <button class="btn_cadastrar" type="button" onclick="init()">
+            <button class="btn_cadastrar" type="button" onclick="updateData()">
               Salvar Alterações
             </button>
             <button class="btn_cancelar" type="button" onclick="goBack()">
@@ -179,9 +181,35 @@
     function goBack () {
       window.location.replace("lista_de_maquinas.html");
     } 
-
-      function updateData(id) {
-      fetch(`https://retoolapi.dev/2PlLEF/data/${id}`, {
+    function getSingleData(id) {
+      fetch(`https://retoolapi.dev/2PlLEF/data/${id}`)
+      .then(response => {
+          if (!response.ok){
+              throw Error("OOPS, SOMETHING WENT WRONG. :(");
+          }
+          return response.json();        
+      }).then(data => {
+          // TODO add the other inputs
+          document.getElementById("machineName").value = data.machineName;
+          document.getElementById("tempMin").value = data.tempMin;
+          document.getElementById("tempMax").value = data.tempMax;
+          document.getElementById("vibMin").value = data.vibMin;
+          document.getElementById("vibMax").value = data.vibMax;
+          document.getElementById("noiseMin").value = data.noiseMin;
+          document.getElementById("noiseMax").value = data.noiseMax;
+            }).catch(error => {
+                console.log(error);
+            })
+    };
+function init() {
+  const url = new URL(window.location.href);
+  const machineId = url.searchParams.get("machineId");
+  getSingleData(machineId);
+  return machineId;
+}
+var machineId = init();
+      function updateData() {
+      fetch(`https://retoolapi.dev/2PlLEF/data/${machineId}`, {
           method: 'PATCH',
           headers: {
               'content-type': 'application/json'
@@ -205,12 +233,12 @@
           console.log(error);
       })
     }
-    function init() {
-    const url = new URL(window.location.href);
-    const machineId = url.searchParams.get("machineId");
-    console.log(machineId);
-    updateData(machineId);
-}
+//     function init() {
+//     const url = new URL(window.location.href);
+//     const machineId = url.searchParams.get("machineId");
+//     console.log(machineId);
+//     //updateData(machineId);
+// }
 
   </script>
   <script>
@@ -249,6 +277,8 @@
       });
     }
   </script>
+
+  
 </body>
 
 </html>

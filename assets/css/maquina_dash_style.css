@@ -36,8 +36,8 @@ button {
 
 @media only screen and (min-width: 600px) {
   .navbar {
-      justify-content: space-between;
-      padding: 0 0 0 16px;
+    justify-content: space-between;
+    padding: 0 0 0 16px;
   }
 }
 
@@ -61,7 +61,7 @@ body.open .navbar-overlay {
 
 @media only screen and (min-width: 600px) {
   .navbar-overlay {
-      display: none;
+    display: none;
   }
 }
 
@@ -78,7 +78,7 @@ body.open .navbar-overlay {
 
 @media only screen and (min-width: 600px) {
   .navbar-burger {
-      display: none;
+    display: none;
   }
 }
 
@@ -111,12 +111,12 @@ body.open .navbar-menu {
 
 @media only screen and (min-width: 600px) {
   .navbar-menu {
-      position: static;
-      translate: 0 0;
-      width: auto;
-      background: transparent;
-      flex-direction: row;
-      visibility: visible;
+    position: static;
+    translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
   }
 }
 
@@ -136,7 +136,7 @@ body.open .navbar-menu {
 .maquinas_conteudo {
   margin-top: 64px;
   display: flex;
-  
+
   flex-direction: column;
 }
 
@@ -191,8 +191,15 @@ h1 {
   margin-right: 3%;
 }
 
-.btn-list a {
+.btn-list button {
   margin: 0.5rem;
 }
 
 
+.btn-danger {
+  background-color: #E23434;
+}
+
+.btn-primary {
+  background-color: #3540E6;
+}

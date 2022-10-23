@@ -313,3 +313,9 @@ body.open .navbar-menu {
   justify-content: space-between;
   padding-bottom: 5%;
 }
+
+input {
+  color: #344EE2;
+  font-weight: 900;
+  font-family: 'Zen Maru Gothic';
+}

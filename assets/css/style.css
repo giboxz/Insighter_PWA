@@ -4,13 +4,14 @@
 
 
 @media screen and (min-width: 768px) {
-  #wrapper-content{
+  #wrapper-content {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  #wrapper{
+
+  #wrapper {
     width: 33%;
   }
 }
