@@ -200,19 +200,21 @@
       }
       var id = init();
       function deleteData(id) {
-        fetch(`https://retoolapi.dev/2PlLEF/data/${id}`, {
-          method: 'DELETE'
-        }).then(message => {
-          console.log('DELETE successful!');
-        }).catch(message => {
-          console.log('Could not DELETE');
-        })
+        if(id!=3){
+          fetch(`https://retoolapi.dev/2PlLEF/data/${id}`, {
+            method: 'DELETE'
+          }).then(message => {
+            console.log('DELETE successful!');
+          }).catch(message => {
+            console.log('Could not DELETE');
+          })
+        }
       }
 
       function deleteMachine() {
         let url = '/lista_de_maquinas.html';
-        window.location.replace(url);
         deleteData(id);
+        window.location.replace(url);
       }
 
 
