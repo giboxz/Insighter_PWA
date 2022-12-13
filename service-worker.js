@@ -34,7 +34,6 @@ self.addEventListener('install', event => {
         '/assets/css/select_maquinas.css',
         '/assets/css/style.css',
         '/assets/css/termos_style.css',
-        '/assets/css/NavBar.css',
 
         //pasta JS
         './js/api_call.js',
