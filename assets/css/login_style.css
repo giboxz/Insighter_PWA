@@ -6,8 +6,9 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: Zen Maru Gothic;
+    font-family: sans-serif;
     font-weight: 700 !important;
+    background-image: url('/assets/images/background.jpeg') ;
 }
 
 body .content{
@@ -36,7 +37,7 @@ body .content .header-content{
 }
 
 body .content .header-content .insighter-logo img{
-    width: 300px;
+    width: 150px;
 }
 
 body .content .labels{
@@ -57,7 +58,7 @@ body .content .labels > form{
 body .content .labels > form .input-usuario{
     margin-bottom: 10px;
     background: rgba(53, 64, 230, 0.09);
-    border-radius: 30px;
+    border-radius: 0em 1em 0em 1em;
     height: 45px;
     padding: 0 15px 0 15px;
     border: none;
@@ -65,7 +66,7 @@ body .content .labels > form .input-usuario{
 
 body .content .labels > form .input-senha{
     background: rgba(53, 64, 230, 0.09);
-    border-radius: 30px;
+    border-radius: 0em 1em 0em 1em;
     padding: 0 15px 0 15px;
     height: 45px;
     border: none;
@@ -102,7 +103,7 @@ body .content .labels .labels-esqueci > a{
 body .content .buttons .buttons_entrar > a button, body .content .buttons .buttons_cadastre-se > a button{
     width: 300px;
     height: 45px;
-    border-radius: 30px;
+    border-radius: 0em 1em 0em 1em;
     border: none;
     color: white;
     font-size: 20px;
@@ -152,8 +153,14 @@ body .content .buttons .buttons_ou p::before{
     border-radius: 24px;
 }
 
-/* @media screen and (max-width: 600px) {
-    body .content{
-        
-    }
-  } */
+.entrar button{
+    width: 300px;
+    height: 45px;
+    border-radius: 0em 1em 0em 1em;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #3540E6;
+}
+

@@ -17,14 +17,14 @@
 }
 
 .wrapper {
-  position: relative;
-  padding-top: 20px;
+  /* position: relative; */
+  /* padding-top: 20px; */
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.2);
   max-width: 850px;
-  margin: 35px 2% 5% 2%;
+  /* margin: 35px 2% 5% 2%; */
 }
 
 #chart-bar-temp {
